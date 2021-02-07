@@ -3,6 +3,7 @@ GENERAL SETUP
 ******************************/
 
 * {margin: 0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif;}
+a {color: var(--primary-color);}
 a:hover {cursor: pointer;}
 
 /* color variables */
@@ -19,7 +20,7 @@ CONTAINER AND HEADER
 
 /* responsive container */
 .container {
-    margin: 4rem auto; /* room on top and centered horizontally */
+    margin: 3rem auto; /* room on top and centered horizontally */
     max-width: 768px; /* no bigger than an ipad */;
 }
 
@@ -43,7 +44,7 @@ TITLE ROW
 .title-row {
     background-color: var(--primary-light-gray);
     text-transform: uppercase;
-    margin-top: 4rem;
+    margin-top: 2rem;
     font-size: 0.9rem;
     padding: 0.75rem 1.25rem;
     color: var(--primary-dark-gray);
@@ -70,6 +71,7 @@ FLEX ROWS
     color: var(--primary-dark-gray);
     font-weight: 400;
     font-size: 14px;
+    line-height: 1.25rem;
 }
 
 .flex-row span {
@@ -77,7 +79,8 @@ FLEX ROWS
     color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 700;
-    margin-top: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-left: 2.25rem;
 }
 
@@ -102,6 +105,6 @@ MEDIA QUERIES
     .flex-row span {
         margin-left: auto; /* align time text to the right with auto margin */
         font-size: 1.2rem; /* reduce the font-size */
-        margin-top: .25rem; /* reduce the top margin */
+        padding-top: 0.3rem; /* reduce the top margin */
     }
 }
