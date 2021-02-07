@@ -1,0 +1,107 @@
+/******************************
+GENERAL SETUP
+******************************/
+
+* {margin: 0; padding:0; box-sizing:border-box; font-family:"Poppins",sans-serif;}
+a:hover {cursor: pointer;}
+
+/* color variables */
+:root {
+    --primary-color: rgb(79, 70, 229);
+    --primary-black: rgb(17, 24, 39);
+    --primary-dark-gray: rgb(107, 114, 128);
+    --primary-light-gray: rgb(229, 231, 235);
+}
+
+/******************************
+CONTAINER AND HEADER
+******************************/
+
+/* responsive container */
+.container {
+    margin: 4rem auto; /* room on top and centered horizontally */
+    max-width: 768px; /* no bigger than an ipad */;
+}
+
+/* style header in a div */
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h3 .highlight {
+    color: var(--primary-color);
+}
+
+/******************************
+TITLE ROW
+******************************/
+
+.title-row {
+    background-color: var(--primary-light-gray);
+    text-transform: uppercase;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.25rem;
+    color: var(--primary-dark-gray);
+}
+
+/******************************
+FLEX ROWS
+******************************/
+
+.flex-row {
+    margin: 1.25em;
+    display: flex; /* default is {flex-direction: row;} */
+    justify-content: space-between; /* empty space pushes items to sides */
+    align-items: flex-start; /* item margin edge sticks to top of flex container */
+}
+
+.flex-row h4 {
+    color: var(--primary-black);
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+
+.flex-row p {
+    color: var(--primary-dark-gray);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.flex-row span {
+    white-space: nowrap; /* span wraps text by default */
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-left: 2.25rem;
+}
+
+/* lighten up the horizontal divider */
+hr {
+    background-color: var(--primary-light-gray);
+    border: none;
+    height: 1px;
+}
+
+/******************************
+MEDIA QUERIES
+******************************/
+
+/* move time below text on small devices */
+@media only screen and (max-width: 600px) {
+    
+    .flex-row {
+        flex-wrap: wrap; /* (span) item that doesn't fit gets wrapped to next row */
+    }
+
+    .flex-row span {
+        margin-left: auto; /* align time text to the right with auto margin */
+        font-size: 1.2rem; /* reduce the font-size */
+        margin-top: .25rem; /* reduce the top margin */
+    }
+}
