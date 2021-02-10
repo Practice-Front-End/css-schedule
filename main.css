@@ -10,8 +10,10 @@ a:hover {cursor: pointer;}
 :root {
     --primary-color: rgb(79, 70, 229);
     --primary-black: rgb(17, 24, 39);
+    --primary-white: rgba(232, 234, 237);
     --primary-dark-gray: rgb(107, 114, 128);
     --primary-light-gray: rgb(229, 231, 235);
+    
 }
 
 /******************************
@@ -20,7 +22,7 @@ CONTAINER AND HEADER
 
 /* responsive container */
 .container {
-    margin: 3rem auto; /* room on top and centered horizontally */
+    margin: 2rem auto; /* room on top and centered horizontally */
     max-width: 768px; /* no bigger than an ipad */;
 }
 
@@ -71,7 +73,7 @@ FLEX ROWS
     color: var(--primary-dark-gray);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.25rem;
+    line-height: 1.3rem;
 }
 
 .flex-row span {
@@ -89,6 +91,54 @@ hr {
     background-color: var(--primary-light-gray);
     border: none;
     height: 1px;
+}
+
+/******************************
+GOOGLE SEARCH BAR
+******************************/
+
+.inputWrapper {
+    background-color: var(--primary-dark-gray);
+    border-radius: 40px;
+    margin: 3rem auto;
+    width: 320px;
+    height: 45px;
+    /* flex rows, vertical center */
+    display: flex;
+    align-items: center;
+    flex: row;
+    flex-grow: 1 5;
+
+}
+
+/* style direct child of "google-search" div */
+.inputWrapper input {
+    width: 100%;
+    height: 45px;
+    background-color: var(--primary-dark-gray);
+    border: none;
+    padding-left: 5px;
+    /* remove default input styling */
+    appearance: none;
+    outline: none !important;
+    box-shadow: none;
+}
+
+input:focus {
+    outline:none;
+    border:none;
+    color: white;
+}
+
+.inputWrapper input::placeholder {
+    color: var(--primary-light-gray);
+    font-weight: 300;
+    /* font-size: 1rem; */
+}
+
+i {
+    padding: 0 1rem;
+    color: var(--primary-white);
 }
 
 /******************************
