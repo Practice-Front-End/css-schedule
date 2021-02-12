@@ -1,85 +1,217 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Endevour to Automate 🌱</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-</head>
-<body>
-    <div class="container">
-        <!-- PAGE HEADLINE -->
-        <h3>Habitual <span class="highlight">Success</span></h3>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Habitual Success</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- STYLES -->
+        <link rel="stylesheet" href="main.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <!-- FAVICONA -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="inputWrapper">
+                <i class="fas fa-search"></i>
+                <div class="formContainer">
+                    <form action="https://www.google.com/search" method="GET">
+                        <input
+                            type="text"
+                            name="q"
+                            placeholder="Search Google"
+                            class="inputArea"
+                        />
+                        <button><i class="fab fa-google"></i></button>
+                    </form>
+                </div>
+            </div>
 
-        <!-- TITLE ROW #1 -->
-        <div class="title-row">Morning</div>
-        
-        <!-- FLEX ROW #1 -->
-        <div class="flex-row">
-            <div> <!-- div keeps title and description together in flex row -->
-                <h4>Cardio</h4>
-                <p>Stretch and warmup. Meditate as you run and enjoy the morning air. Visualize winning, stay loose, take a hot bath. Snack on tea and mixed nuts while you code.</p>
-            </div>
-            <span>6:00 AM</span> <!-- use span to keep things simple (vertically align via margin)-->
-        </div><hr>
-        <!-- FLEX ROW #2 -->
-        <div class="flex-row">
-            <div> <!-- div keeps title and description together in flex row -->
-                <h4>Code</h4>
-                <p><a href="https://calendar.google.com/calendar/u/0/r?tab=rc" target="_blank">Calendar</a> review. Then get on <a href="https://github.com/settings/organizations" target="_blank">Github</a>. Imitate greatness, add your own flare, win championships. You are a technical PM. "We talkin' 'bout practice!" (Allen Iverson). </p>
-            </div>
-            <span>7:00 AM</span> <!-- use span to keep things simple (vertically align via margin)-->
-        </div><hr>
-        <!-- FLEX ROW #3 -->
-        <div class="flex-row">
-            <div> <!-- div keeps title and description together in flex row -->
-                <h4>Posture</h4>
-                <p>Boxing technique, flexibility, and core strength. Grilled chicken and fruit for lunch. This is your one time a day to watch TV - <a href="https://www.youtube.com/channel/UCIALMKvObZNtJ6AmdCLP7Lg/videos" target="_blank">Bloomberg</a>, <a href="https://www.youtube.com/c/YahooFinance/videos" target="_blank">Yahoo Finance</a>, and <a href="https://www.youtube.com/c/TheEconomist/videos" target="_blank">The Economist.</a></p>
-            </div>
-            <span>11:00 AM</span> <!-- use span to keep things simple (vertically align via margin)-->
-        </div>
-
-        <!-- TITLE ROW #2 -->
-        <div class="title-row">Afternoon</div>
-        <!-- FLEX ROW #1 -->
-        <div class="flex-row">
-            <div> <!-- div keeps title and description together in flex row -->
-                <h4>Finance</h4>
-                <p>Review investments on <a href="https://robinhood.com/login" target="_blank">Robinhood.</a> Read about the market, interesting companies, and tax/portfolio strategy. Learn one new thing everyday on <a href="https://www.investopedia.com/financial-term-dictionary-4769738" target="_blank">Investopedia.</a></p>
-            </div>
-            <span>3:00 PM</span> <!-- use span to keep things simple (vertically align via margin)-->
-        </div><hr>
-        <!-- FLEX ROW #2 -->
-        <div class="flex-row">
-            <div> <!-- div keeps title and description together in flex row -->
-                <h4>Family</h4>
-                <p>Take a break from tv and computers! Eat a healthy dinner. Wrestle, play toys, and draw with Jamie. Do laundry, wash dishes, shower and shave.</p>
-            </div>
-            <span>6:00 PM</span> <!-- use span to keep things simple (vertically align via margin)-->
-        </div><hr>
-        <!-- FLEX ROW #3 -->
-        <div class="flex-row">
-            <div> <!-- div keeps title and description together in flex row -->
-                <h4>Product Mgmt</h4>
-                <p><a href="https://www.meetup.com/dev-friends/" target="_blank">Dev Friends.</a> Hold one event everyday: New Coders (mon), JS Friends (tues), PM Friends (wed), UX Friends (thur), Volunteer Friends (fri, sat). Clear your <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target=_"blank">inbox.</a></p>
-            </div>
-            <span>8:00 PM</span> <!-- use span to keep things simple (vertically align via margin)-->
-        </div>
-
-        <!-- ADD GOOGLE SEARCH BAR SO THIS CAN BE MY NEW TAB PAGE -->
-        <div class="inputWrapper">
-            <i class="fas fa-search"></i>
-            <form action="https://www.google.com/search" method="GET">
-                <input class="input" type="text" name="q" placeholder="Search Google">
+            <!-- GOOGLE SEARCH BAR -->
+            <!-- <div class="inputWrapper">
+            <i class="fas fa-search"></i> -->
+            <!-- GET method to request google | name="q" is added to the end of the url to initiate the search -->
+            <!-- <form action="> -->
+            <!-- button first, then float to the right, need span ... -->
+            <!-- <button><i class="fab fa-google"></i></button>
+                <span><input class="input" type="text" name="q" placeholder="Search Google"></span>
             </form>
+        </div> -->
+
+            <!-- PAGE HEADLINE (HIDDEN TILL REDESIGN) -->
+            <h3>Habitual <span class="highlight">Success</span></h3>
+
+            <!-- TITLE ROW #1 -->
+            <div class="title-row">Weekdays</div>
+            <!-- FLEX ROW #1 -->
+            <div class="flex-row">
+                <div>
+                    <!-- div keeps title and description together in flex row -->
+                    <h4>Cardio</h4>
+                    <p>
+                        <strong>Running is an undeniable win.</strong> Stretch,
+                        warmup, and breath the morning air. Stay loose, enjoy a
+                        relaxing shower. Prep a warm cup of tea, fruit, and nuts
+                        for breakfast.
+                    </p>
+                </div>
+                <span>6:00 AM</span>
+                <!-- use span to keep things simple (vertically align via margin)-->
+            </div>
+            <hr />
+            <!-- FLEX ROW #2 -->
+            <div class="flex-row">
+                <div>
+                    <!-- div keeps title and description together in flex row -->
+                    <h4>Code</h4>
+                    <p>
+                        <a
+                            href="https://calendar.google.com/calendar/u/0/r?tab=rc"
+                            target="_blank"
+                            >Calendar</a
+                        >
+                        review. Then get on
+                        <a
+                            href="https://github.com/settings/organizations"
+                            target="_blank"
+                            >Github</a
+                        >. Imitate greatness, add your own flare, win
+                        championships.
+                        <strong>You are a technical PM.</strong> "We talkin'
+                        'bout practice!" (Allen Iverson).
+                    </p>
+                </div>
+                <span>7:00 AM</span>
+                <!-- use span to keep things simple (vertically align via margin)-->
+            </div>
+            <hr />
+            <!-- FLEX ROW #3 -->
+            <div class="flex-row">
+                <div>
+                    <!-- div keeps title and description together in flex row -->
+                    <h4>Posture</h4>
+                    <p>
+                        Boxing technique and core strength drills. Grilled
+                        chicken and fruit for lunch. Shop and clean, then relax
+                        and watch TV -
+                        <a
+                            href="https://www.youtube.com/channel/UCIALMKvObZNtJ6AmdCLP7Lg/videos"
+                            target="_blank"
+                            >Bloomberg</a
+                        >,
+                        <a
+                            href="https://www.youtube.com/c/YahooFinance/videos"
+                            target="_blank"
+                            >Yahoo Finance</a
+                        >, and
+                        <a
+                            href="https://www.youtube.com/c/TheEconomist/videos"
+                            target="_blank"
+                            >The Economist.</a
+                        >
+                    </p>
+                </div>
+                <span>11:00 AM</span>
+                <!-- use span to keep things simple (vertically align via margin)-->
+            </div>
+
+            <!-- TITLE ROW #2 -->
+            <div class="title-row">Holidays</div>
+            <!-- FLEX ROW #1 -->
+            <div class="flex-row">
+                <div>
+                    <!-- div keeps title and description together in flex row -->
+                    <h4>Finance</h4>
+                    <p>
+                        Review investments on
+                        <a href="https://robinhood.com/login" target="_blank"
+                            >Robinhood.</a
+                        >
+                        Read articles on
+                        <a href="https://www.marketwatch.com/" target="_blank"
+                            >Market Watch.</a
+                        >
+                        Learn something new everyday on
+                        <a
+                            href="https://www.investopedia.com/financial-term-dictionary-4769738"
+                            target="_blank"
+                            >Investopedia.</a
+                        >
+                        Improve income opportunities by getting
+                        <a
+                            href="https://www.linkedin.com/company/pminstitute/"
+                            target="_blank"
+                            >certified.</a
+                        >
+                    </p>
+                </div>
+                <span>3:00 PM</span>
+                <!-- use span to keep things simple (vertically align via margin)-->
+            </div>
+            <hr />
+            <!-- FLEX ROW #2 -->
+            <div class="flex-row">
+                <div>
+                    <!-- div keeps title and description together in flex row -->
+                    <h4>Family</h4>
+                    <p>
+                        <strong>Chill with Jamie!</strong> Folow her lead, play,
+                        and draw. Eat a healthy low-carb dinner. Wash the
+                        dishes, do laundry, shower and shave. Relax, relax,
+                        relax.
+                    </p>
+                </div>
+                <span>6:00 PM</span>
+                <!-- use span to keep things simple (vertically align via margin)-->
+            </div>
+            <hr />
+            <!-- FLEX ROW #3 -->
+            <div class="flex-row">
+                <div>
+                    <!-- div keeps title and description together in flex row -->
+                    <h4>Product Mgmt</h4>
+                    <p>
+                        <a
+                            href="https://www.meetup.com/dev-friends/"
+                            target="_blank"
+                            >Dev Friends!</a
+                        >
+                        Automate events to run effortlessly. Start with: New
+                        Coders (m), React Friends (t), Python Friends (w), UX
+                        Friends (tr), Volunteer Friends (f/s/su).
+                        <strong>Bed by 10pm.</strong>
+                    </p>
+                </div>
+                <span>8:00 PM</span>
+                <!-- use span to keep things simple (vertically align via margin)-->
+            </div>
         </div>
-
-    </div>
-
-</body>
+    </body>
 </html>
