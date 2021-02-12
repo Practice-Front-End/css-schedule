@@ -1,6 +1,6 @@
-/******************************
-GENERAL SETUP
-******************************/
+/*****************************************
+GLOBAL STYLES
+*****************************************/
 
 * {
     margin: 0;
@@ -8,19 +8,8 @@ GENERAL SETUP
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-a {
-    color: var(--primary-color);
-}
-a:hover {
-    cursor: pointer;
-}
-/* hide scroll bar, but still scrollable */
-::-webkit-scrollbar {
-    display: none;
-    overflow-y: scroll;
-}
 
-/* color variables */
+/* global variables */
 :root {
     --primary-color: rgb(79, 70, 229);
     --primary-black: rgb(17, 24, 39);
@@ -29,78 +18,10 @@ a:hover {
     --primary-light-gray: rgb(229, 231, 235);
 }
 
-/******************************
-CONTAINER AND HEADER
-******************************/
-
-/* responsive container */
-.container {
-    margin: 2rem auto;
-    max-width: 768px;
-}
-
-/* style header in a div */
-h3 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-}
-
-h3 .highlight {
-    color: var(--primary-color);
-}
-
-/******************************
-TITLE AND FLEX ROWS
-******************************/
-
-.title-row {
-    background-color: var(--primary-light-gray);
-    text-transform: uppercase;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    padding: 0.75rem 1.25rem;
-    color: var(--primary-dark-gray);
-}
-
-.flex-row {
-    margin: 1.25em;
-    display: flex; /* default is {flex-direction: row;} */
-    justify-content: space-between; /* empty space pushes items to sides */
-    align-items: flex-start; /* item margin edge sticks to top of flex container */
-}
-
-.flex-row h4 {
-    color: var(--primary-black);
-    font-weight: 700;
-    padding-bottom: 4px;
-}
-
-.flex-row p {
-    color: var(--primary-dark-gray);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.3rem;
-}
-
-/* span wraps text by default */
-.flex-row span {
-    white-space: nowrap;
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    font-weight: 700;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 2.25rem;
-}
-
-/* lighten up the horizontal divider */
-hr {
-    background-color: var(--primary-light-gray);
-    border: none;
-    height: 1px;
+/* hide scroll bar, but still scrollable */
+::-webkit-scrollbar {
+    display: none;
+    overflow-y: scroll;
 }
 
 /*****************************************
@@ -211,6 +132,88 @@ submit {
 }
 
  */
+
+/*****************************************
+CONTAINER AND HEADER
+*****************************************/
+
+/* responsive container */
+.container {
+    margin: 2rem auto;
+    max-width: 768px;
+}
+
+/* style header in a div */
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h3 .highlight {
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/******************************
+TITLE AND FLEX ROWS
+******************************/
+
+.title-row {
+    background-color: var(--primary-light-gray);
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.25rem;
+    color: var(--primary-dark-gray);
+}
+
+.flex-row {
+    margin: 1.25em;
+    display: flex; /* default is {flex-direction: row;} */
+    justify-content: space-between; /* empty space pushes items to sides */
+    align-items: flex-start; /* item margin edge sticks to top of flex container */
+}
+
+.flex-row h4 {
+    color: var(--primary-black);
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+
+.flex-row p {
+    color: var(--primary-dark-gray);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3rem;
+}
+
+/* span wraps text by default */
+.flex-row span {
+    white-space: nowrap;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 2.25rem;
+}
+
+/* lighten up the horizontal divider */
+hr {
+    background-color: var(--primary-light-gray);
+    border: none;
+    height: 1px;
+}
 
 /******************************
 MEDIA QUERIES
