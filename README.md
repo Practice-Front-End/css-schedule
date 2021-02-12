@@ -1,3 +1,3 @@
 # css-schedule
 
-https://practice-front-end.github.io/css-schedule/
+https://practice-web-sites.github.io/my-schedule/
