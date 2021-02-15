@@ -1,171 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Habitual Success</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- STYLES -->
-        <link rel="stylesheet" href="main.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        />
-        <!-- FAVICONS -->
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-    </head>
-    <body>
-        <div class="container">
-            <!-------------------------
-            GOOGLE SEARCH BAR
-             ------------------------->
-            <div class="inputWrapper">
-                <i class="fas fa-search"></i>
-                <div class="formContainer">
-                    <form action="https://www.google.com/search" method="GET">
-                        <input
-                            type="text"
-                            name="q"
-                            placeholder="Search Google"
-                            class="inputArea"
-                        />
-                        <button><i class="fab fa-google"></i></button>
-                    </form>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Habitual Success</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- HEADLINE -->
+        <h3>Product <span class="highlight">Management</span></h3>
+        
+        <!--------------------
+        SECTION ONE
+        -------------------->
+        <!-- TITLE ROW -->
+        <div class="title-row">Morning</div>
+        <!-- FLEX ROW -->
+        <div class="flex-row">
+            <!-- keeps title/description together in a flex row -->
+            <div>
+                <h4>Plan</h4>
+                <p>
+                    Review emails, check my calendar, create a todo list for the day. Read through cards in our product kanban board. Prep notes for the morning standup.
+                </p>
             </div>
+            <span>8:00 AM</span>
+        </div><hr/>
 
-            <!-- GOOGLE SEARCH BAR -->
-            <!-- <div class="inputWrapper">
-            <i class="fas fa-search"></i> -->
-            <!-- GET method to request google | name="q" is added to the end of the url to initiate the search -->
-            <!-- <form action="> -->
-            <!-- button first, then float to the right, need span ... -->
-            <!-- <button><i class="fab fa-google"></i></button>
-                <span><input class="input" type="text" name="q" placeholder="Search Google"></span>
-            </form>
-            </div> -->
+        <!-- FLEX ROW -->
+        <div class="flex-row">
+            <!-- keeps title/description together in a flex row -->
+            <div>
+                <h4>Standup</h4>
+                <p>
+                    Morning standup with design and engineering. Keep the team focused and brief! Update active cards, prioritize the backlog, assign work. Share stakeholder feedback.
+                </p>
+            </div>
+            <span>9:00 AM</span>
+        </div><hr/>
 
-            <!-------------------------
-            MY SCHEDULE
-             ------------------------->
-            <!-- HIDDEN PAGE HEADLINE --> <!-- <h3>Habitual <span class="highlight">Success</span></h3> -->
-            
-            <!-- TITLE ROW -->
-            <div class="title-row">Weekdays</div>
-            <!-- FLEX ROW -->
-            <div class="flex-row">
-                <div>
-                    <!-- div keeps title and description together in flex row -->
-                    <h4>Run</h4>
-                    <p>
-                        Check my investments. Get loose and <strong>start the music.</strong> Get out of the house, enjoy the weather, and run with a win. <a href="https://calendar.google.com/calendar/u/0/r?tab=rc" target="_blank">Calendar</a> review. Define my daily plan on <a href="https://www.evernote.com/client/web#?b=dfe5e277-7b26-4361-9ab0-a6d74a0f5823&n=e0facd3a-0906-dc77-6317-e21571376808&" target="_blank">Evernote.</a>
-                    </p>
-                </div>
-                <span>6:00 AM</span>
-                <!-- use span to keep things simple (vertically align via margin)-->
+        <!-- FLEX ROW -->
+        <div class="flex-row">
+            <!-- keeps title/description together in a flex row -->
+            <div>
+                <h4>Analysis</h4>
+                <p>
+                    Analyze and organize your teams' data. Are your teams/customers headed in the right direction? Make time to think critically about whats going well and what isn't.
+                </p>
             </div>
-            <hr />
-            <!-- FLEX ROW -->
-            <div class="flex-row">
-                <div>
-                    <!-- div keeps title and description together in flex row -->
-                    <h4>Code</h4>
-                    <p><a href="https://www.meetup.com/find/events/tech/?allMeetups=false&radius=Infinity&userFreeform=new+york&mcId=c10001&change=yes&eventFilter=all" target="_blank">Explore Meetups.</a> I am a technical product manager. That means I know my shit! Keep building front end websites on <a href="https://github.com/settings/organizations" target="_blank">Github.</a> "We talkin' 'bout practice!" (Allen Iverson).
-                    </p>
-                </div>
-                <span>7:00 AM</span>
-                <!-- use span to keep things simple (vertically align via margin)-->
+            <span>10:00 AM</span>
+        </div><hr>
+
+        <!-- FLEX ROW -->
+        <div class="flex-row">
+            <!-- keeps title/description together in a flex row -->
+            <div>
+                <h4>Preparation</h4>
+                <p>
+                    People love stories. Data, progress, and problems are chapters along your your roadmap. Visually present your teams' stories. Keep stakeholders engaged/invested.
+                </p>
             </div>
-            <hr />
-            <!-- FLEX ROW -->
-            <div class="flex-row">
-                <div>
-                    <!-- div keeps title and description together in flex row -->
-                    <h4>Posture</h4>
-                    <p>
-                        Boxing technique and core strength drills. Grilled
-                        chicken and fruit for lunch. Shop and clean, then relax
-                        and watch TV -
-                        <a
-                            href="https://www.youtube.com/channel/UCIALMKvObZNtJ6AmdCLP7Lg/videos"
-                            target="_blank"
-                            >Bloomberg</a
-                        >,
-                        <a
-                            href="https://www.youtube.com/c/YahooFinance/videos"
-                            target="_blank"
-                            >Yahoo Finance</a
-                        >, and
-                        <a
-                            href="https://www.youtube.com/c/TheEconomist/videos"
-                            target="_blank"
-                            >The Economist.</a
-                        >
-                    </p>
-                </div>
-                <span>11:00 AM</span>
-                <!-- use span to keep things simple (vertically align via margin)-->
-            </div>
-            <hr />
-            <!-- FLEX ROW -->
-            <div class="flex-row">
-                <div>
-                    <!-- div keeps title and description together in flex row -->
-                    <h4>Family</h4>
-                    <p>
-                        <strong>Chill with Jamie!</strong> Folow her lead, play,
-                        and draw. Eat a healthy low-carb dinner. Wash the
-                        dishes, do laundry, shower and shave. Relax, relax,
-                        relax.
-                    </p>
-                </div>
-                <span>6:00 PM</span>
-                <!-- use span to keep things simple (vertically align via margin)-->
-            </div>
-            <hr />
-            <!-- FLEX ROW #3 -->
-            <div class="flex-row">
-                <div>
-                    <!-- div keeps title and description together in flex row -->
-                    <h4>Product Mgmt</h4>
-                    <p>
-                        <a
-                            href="https://www.meetup.com/dev-friends/"
-                            target="_blank"
-                            >Dev Friends!</a
-                        >
-                        Build vision, define a roadmap, experiment with events - delegate and auatomate. Be available on slack to help with ux/pm planning.
-                        <strong>Kindle in bed by 11pm.</strong>
-                    </p>
-                </div>
-                <span>8:00 PM</span>
-                <!-- use span to keep things simple (vertically align via margin)-->
-            </div>
-            <!-- TITLE ROW #2 -->
-            <div class="title-row">Holidays</div>
+            <span>11:00 AM</span>
         </div>
-    </body>
+        
+        <!--------------------
+        SECTION TWO
+        -------------------->
+
+        <!-- TITLE ROW #2 -->
+        <div class="title-row">Afternoon</div>
+        
+        <!-- FLEX ROW -->
+        <div class="flex-row">
+            <!-- keeps title/description together in a flex row -->
+            <div>
+                <h4>Meetings</h4>
+                <p>Meetings with stakeholders, customer service, ecommerce... Let it be known you're available after lunch. Support your cross-functional teams! Organize big picture vision!</p>
+            </div>
+            <span>1:00 PM</span>
+        </div><hr/>
+
+        <!-- FLEX ROW -->
+        <div class="flex-row">
+            <!-- keeps title/description together in a flex row -->
+            <div>
+                <h4>Improvement</h4>
+                <p>Examine business processes. Everything can be mapped (lo-fi for adjustment flexibility). Use this time to fight fires. But, remember fires mean you processes can be improved!</p>
+            </div>
+            <span>4:00 PM</span>
+        </div><hr/>
+
+        <!-- FLEX ROW -->
+        <div class="flex-row">
+            <!-- keeps title/description together in a flex row -->
+            <div>
+                <h4>For Tomorrow</h4>
+                <p>Review emails, check calendar, create a todo list for the day. Draft the next days' presentations. Review your product backlogs. Prep notes for the morning standup.</p>
+            </div>
+            <span>5:00 PM</span>
+        </div>
+    </div>
+</body>
 </html>
